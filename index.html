@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-awesome.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/Logo2.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Igor Passos</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="home" class="intro">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/Logo1.png" alt="" width="100" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="color: black"
+          >
+            <span class="navbar-toggler-icon" style="color: black"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="home-link"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="sobre-link" href="#sobre">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="equipe-link" href="#equipe">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contato-link" href="#contato">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="header position-relative overflow-hidden mb-3">
+        <div class="container position-relative z-3">
+          <img
+                src="images/igor.png"
+                style="margin: 0 auto; max-width: 100%;"
+                class="d-block"
+              />
+      </header>
+    </section>
+
+    <!-- Introduction -->
+    <section id="sobre" class="intro">
+      <div class="text-center">
+        <!-- CONTAGEM REGRESSIVA -->
+        <div class="row pt-7 pb-8">
+          <div class="col col-lg-3 timer">
+            <div class="title_sobre">01:24:03</div>
+          </div>
+          <div class="col col-lg-3">
+            <h2 class="title_sobre fs-3">
+              Contagem regressiva para as primeiras aulas
+            </h2>
+          </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="mb-5">
+          <h1 class="title_sobre fs-1">Conheça Igor Passos</h1>
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/j-2mBFRjC6Y?si=dfkf8OS9UWvSSwKR"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="text-light">
+            Veja quem é o Igor Passos no video acima <br> antes de continuar sua
+            jornada por aqui!
+          </p>
+        </div>
+
+        <!-- ABAIXO DO VIDEO -->
+        <div class="text-center">
+            <h1 class="title_sobre mt-8 fs-1">PARA QUEM É ESSA JORNADA</h1>
+          </div>
+        <div class="parent">
+          <div class="div1 rocket mt-4">
+            <img src="images/foguete.png" alt=""  style="width: 18%;"/>
+          </div>
+          <div class="div2">
+            <img src="images/linha.png" alt="" style="width: 3%;"/>
+          </div>
+          <div class="div3">
+            <p class="text-light text-center">
+              Quer aproveitar o inicio desse ano para mudar de vida sendo
+              aprovado em concursos que pagam de 2 á 20 mil reais.
+            </p>
+          </div>
+          <div class="div4">
+            <p class="text-light">
+              Quem deseja ter aulas com um professor que já ministrou nos
+              próprios eventos do TRE (um dos maiores concursos públicos do
+              Brasil).
+            </p>
+          </div>
+          <div class="div5">
+            <p class="text-light">
+              Para aqueles que buscam mudar de carreira ou que desejam ingressar
+              no serviço público.
+            </p>
+          </div>
+          <div class="div6">
+            <p class="text-light">
+              Para pessoas que desejam atualizar os conhecimentos na área,
+              afinal nossos cursos irão abranger amplas áreas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details 1 -->
+    <section class="blog intro" id="home" style="margin-bottom: 10%">
+      <div class="container">
+        <div class="blog-header">
+          <h2 class="global-heading global-heading--big title_sobre ">
+            Noticias
+          </h2>
+        </div>
+        <div class="blog-list">
+          <div class="blog-item">
+            <div class="blog-image">
+              <img
+                srcset="
+                  https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80
+                "
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">SEO tips and tricks for new</h3>
+              <p class="blog-desc">
+                Curapitur eleifenc erat id ullarncorper porta, eras turpis tun
+                pus just!), a porititar ju-to ode id oros. Proin lloborti*
+              </p>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image">
+              <img
+                srcset="
+                  https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80
+                "
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">SEO tips and tricks for new</h3>
+              <p class="blog-desc">
+                Curapitur eleifenc erat id ullarncorper porta, eras turpis tun
+                pus just!), a porititar ju-to ode id oros. Proin lloborti*
+              </p>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image">
+              <img
+                srcset="
+                  https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80
+                "
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">SEO tips and tricks for new</h3>
+              <p class="blog-desc">
+                Curapitur eleifenc erat id ullarncorper porta, eras turpis tun
+                pus just!), a porititar ju-to ode id oros. Proin lloborti*
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog intro" id="home" style="margin-bottom: 10%">
+      <div class="container">
+        <div class="blog-header">
+          <h2 class="global-heading global-heading--big title_sobre">
+            Agência de Eventos
+          </h2>
+        </div>
+        <div class="blog-list">
+          <div class="blog-item">
+            <div class="blog-content">
+              <h3 class="blog-title">SEO tips and tricks for new</h3>
+              <p class="blog-desc">
+                Curapitur eleifenc erat id ullarncorper porta, eras turpis tun
+                pus just!), a porititar ju-to ode id oros. Proin lloborti*
+              </p>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-content">
+              <h3 class="blog-title">SEO tips and tricks for new</h3>
+              <p class="blog-desc">
+                Curapitur eleifenc erat id ullarncorper porta, eras turpis tun
+                pus just!), a porititar ju-to ode id oros. Proin lloborti*
+              </p>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-content">
+              <h3 class="blog-title">SEO tips and tricks for new</h3>
+              <p class="blog-desc">
+                Curapitur eleifenc erat id ullarncorper porta, eras turpis tun
+                pus just!), a porititar ju-to ode id oros. Proin lloborti*
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="container">
+        <div class="review-container">
+          <div class="review-list">
+            <img class="review-bg" srcset="./images/review-bg.png 2x" />
+            <div>
+              <div class="review-card">
+                <div class="review-avatar">
+                  <img srcset="./images/review-user1.png 2x" />
+                </div>
+                <h3 class="review-name">Mark Parker</h3>
+                <span class="review-job">CEO of Fiverr</span>
+                <p class="review-desc">
+                  Cura bitur susci pit nequeut lacus interd sit amet dictum nunc
+                  eleifend. Mauris pulvinar odio at nunc labortis.
+                </p>
+                <div class="review-rating">
+                  <img srcset="./images/icon-star.png 2x" /><span>4.5</span>
+                </div>
+                <div class="review-quote">
+                  <img srcset="./images/icon-quote.png 2x" />
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-avatar">
+                  <img srcset="./images/review-user1.png 2x" />
+                </div>
+                <h3 class="review-name">Mark Parker</h3>
+                <span class="review-job">CEO of Fiverr</span>
+                <p class="review-desc">
+                  Cura bitur susci pit nequeut lacus interd sit amet dictum nunc
+                  eleifend. Mauris pulvinar odio at nunc labortis.
+                </p>
+                <div class="review-rating">
+                  <img srcset="./images/icon-star.png 2x" /><span>4.5</span>
+                </div>
+                <div class="review-quote">
+                  <img srcset="./images/icon-quote.png 2x" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="review-card">
+                <div class="review-avatar">
+                  <img srcset="./images/review-user1.png 2x" />
+                </div>
+                <h3 class="review-name">Mark Parker</h3>
+                <span class="review-job">CEO of Fiverr</span>
+                <p class="review-desc">
+                  Cura bitur susci pit nequeut lacus interd sit amet dictum nunc
+                  eleifend. Mauris pulvinar odio at nunc labortis.
+                </p>
+                <div class="review-rating">
+                  <img srcset="./images/icon-star.png 2x" /><span>4.5</span>
+                </div>
+                <div class="review-quote">
+                  <img srcset="./images/icon-quote.png 2x" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <span class="global-caption">IGOR PASSOS CENTRO DE CURSOS</span>
+            <h2 class="global-heading global-heading--big">
+              Fizeram parte desta jornada
+            </h2>
+            <p class="global-text">
+              Conheça algumas pessoas que fizeram parte de nossa jornada até
+              aqui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="home"
+      class="intro"
+      style="margin-bottom: 10%; margin-top: 10%"
+    ></section>
+
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="grid_footer">
+            <div class="img_footer d-flex align-items-center">
+              <img
+                src="images/Logo1.png"
+                alt="Logo"
+                height="55"
+                class="d-inline-block align-text-top"
+              />
+            </div>
+            <div class="servicos_footer">
+              <h2><b>Home</b></h2>
+              <a>Example</a><br />
+              <a>Example</a><br />
+              <a>Example</a><br />
+            </div>
+
+            <div class="servicos_footer">
+              <h2><b>Home</b></h2>
+              <a>Example</a><br />
+              <a>Example</a><br />
+              <a>Example</a><br />
+            </div>
+
+            <div class="servicos_footer">
+              <h2><b>Home</b></h2>
+              <a>Example</a><br />
+              <a>Example</a><br />
+              <a>Example</a><br />
+            </div>
+
+            <div class="servicos_footer">
+              <h2><b>Home</b></h2>
+              <a>Example</a><br />
+              <a>Example</a><br />
+              <a>Example</a><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="to-top" class="to-top-btn">
+      <img src="images/up-arrow.png" alt="" />
+    </button>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        initialSlide: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        initialSlide: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiperSlide", {
+        rewind: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
