@@ -12588,6 +12588,17 @@ footer {
   z-index: 97;
 }
 
+.title_black {
+  font-family: "Myriad Pro";
+  color: black !important;
+  text-align: center;
+  z-index: 97;
+}
+
+.title-orange {
+  color: orange;
+}
+
 .container_retangulos {
   margin-bottom: 5%;
 }
@@ -13174,7 +13185,8 @@ h1 {
 }
 .blog-header {
   text-align: center;
-  margin-bottom: 78px;
+  color: black;
+  /* margin-bottom: 78px; */
 }
 .blog-list {
   display: grid;
@@ -13184,6 +13196,9 @@ h1 {
 .blog-item {
   border-radius: 17px;
   transition: all 0.2s linear;
+  background: #ffffff;
+  box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .blog-item:hover {
   background: #ffffff;
@@ -13392,4 +13407,13 @@ h1 {
 
 .rocket img {
   animation: float 6s ease-in-out infinite;
+}
+
+.cronometro {
+  text-align: center;
+}
+
+.tempo {
+  font-size: 24px;
+  font-weight: bold;
 }
