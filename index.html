@@ -93,16 +93,11 @@
     <section id="sobre" class="intro">
       <div class="text-center">
         <!-- CONTAGEM REGRESSIVA -->
-        <div class="row pt-7 pb-8">
-          <div class="col">
-            <h2 class="title_sobre fs-3">
-              Contagem regressiva para as primeiras aulas
-            </h2>
-          </div>
-          <div class="col timer">
+        <div class="row justify-content-center grid_cronometro pt-7 pb-8 align-items-center">
+          <div class="col-4 timer">
             <div class="cronometro">
               <div class="tempo">
-                <div class="row">
+                <div class="row justify-content-around">
                   <div class="col-sm-2 text-light">
                     <span class="fs-1" id="meses">00</span>
                     <span><p>Meses</p></span>
@@ -119,6 +114,11 @@
               </div>
             </div>
           </div>
+          <div class="col-4 title_cronometro">
+            <h2 class="fs-1">
+              Contagem regressiva para as primeiras aulas
+            </h2>
+          </div>
         </div>
 
         <!-- VIDEO -->
@@ -126,8 +126,8 @@
           <h1 class="title_sobre fs-1 mb-3">Conheça Igor Passos</h1>
           <div class="video-container">
             <iframe
-              width="730"
-              height="485"
+              width="1000"
+              height="500"
               src="https://www.youtube.com/embed/j-2mBFRjC6Y?si=dfkf8OS9UWvSSwKR"
               title="YouTube video player"
               frameborder="0"
@@ -142,40 +142,42 @@
         </div>
 
         <!-- ABAIXO DO VIDEO -->
-        <div class="text-center">
-            <h1 class="title_sobre mt-8 fs-1">PARA QUEM É ESSA JORNADA</h1>
-          </div>
-        <div class="parent">
-          <div class="div1 rocket mt-4">
-            <img src="images/foguete.png" alt=""/>
-          </div>
-          <div class="div2 linha">
-            <img src="images/linha.png" alt=""/>
-          </div>
-          <div class="div3">
-            <p class="text-light text-center">
-              Quer aproveitar o inicio desse ano para mudar de vida sendo
-              aprovado em concursos que pagam de 2 á 20 mil reais.
-            </p>
-          </div>
-          <div class="div4">
-            <p class="text-light text-center">
-              Quem deseja ter aulas com um professor que já ministrou nos
-              próprios eventos do TRE (um dos maiores concursos públicos do
-              Brasil).
-            </p>
-          </div>
-          <div class="div5">
-            <p class="text-light text-center">
-              Para aqueles que buscam mudar de carreira ou que desejam ingressar
-              no serviço público.
-            </p>
-          </div>
-          <div class="div6">
-            <p class="text-light text-center">
-              Para pessoas que desejam atualizar os conhecimentos na área,
-              afinal nossos cursos irão abranger amplas áreas.
-            </p>
+        <div class="jornada">
+          <div class="text-center">
+              <h1 class="title_sobre mt-8 fs-1">PARA QUEM É ESSA JORNADA</h1>
+            </div>
+          <div class="parent">
+            <div class="div1 rocket">
+              <img src="images/foguete.png" alt=""/>
+            </div>
+            <div class="div2 linha">
+              <img src="images/linha.png" alt=""/>
+            </div>
+            <div class="div3">
+              <p class="text-light text-center">
+                Quer aproveitar o inicio desse ano para mudar de vida sendo
+                aprovado em concursos que pagam de 2 á 20 mil reais.
+              </p>
+            </div>
+            <div class="div4">
+              <p class="text-light text-center">
+                Quem deseja ter aulas com um professor que já ministrou nos
+                próprios eventos do TRE (um dos maiores concursos públicos do
+                Brasil).
+              </p>
+            </div>
+            <div class="div5">
+              <p class="text-light text-center">
+                Para aqueles que buscam mudar de carreira ou que desejam ingressar
+                no serviço público.
+              </p>
+            </div>
+            <div class="div6">
+              <p class="text-light text-center">
+                Para pessoas que desejam atualizar os conhecimentos na área,
+                afinal nossos cursos irão abranger amplas áreas.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -328,16 +330,6 @@
     <section class="review">
       <div class="container">
         <div class="review-container">
-          <div class="review-content">
-            <span class="global-caption title-orange">IGOR PASSOS CENTRO DE CURSOS</span>
-            <h2 class="global-heading global-heading--big">
-              Fizeram parte desta jornada
-            </h2>
-            <p class="global-text">
-              Conheça algumas pessoas que fizeram parte de nossa jornada até
-              aqui.
-            </p>
-          </div>
           <div class="review-list">
             <img class="review-bg" srcset="./images/review-bg.png 2x" />
             <div>
@@ -353,7 +345,7 @@
                   duas palestras e na
                   especialização INSS.
                 </p>
-                <div class="review-quote">
+                <div class="review-quote d-flex">
                   <img srcset="./images/icon-quote.png 2x" />
                 </div>
               </div>
@@ -369,7 +361,7 @@
                   duas palestras e na
                   especialização INSS.
                 </p>
-                <div class="review-quote">
+                <div class="review-quote d-flex">
                   <img srcset="./images/icon-quote.png 2x" />
                 </div>
               </div>
@@ -387,11 +379,21 @@
                   duas palestras e na
                   especialização INSS.
                 </p>
-                <div class="review-quote">
+                <div class="review-quote d-flex">
                   <img srcset="./images/icon-quote.png 2x" />
                 </div>
               </div>
             </div>
+          </div>
+          <div class="review-content">
+            <span class="global-caption title-orange">IGOR PASSOS CENTRO DE CURSOS</span>
+            <h2 class="global-heading global-heading--big">
+              Fizeram parte desta jornada
+            </h2>
+            <p class="global-text">
+              Conheça algumas pessoas que fizeram parte de nossa jornada até
+              aqui.
+            </p>
           </div>
         </div>
       </div>
@@ -403,32 +405,35 @@
       style="margin-bottom: 10%;"
     >
       <div class="accordion subscribe-container" id="accordionExample">
-        <h1 class="fs-1">Duvidas Frequentes</h1>
+        <h1 class="fs-1 text-dark">Duvidas Frequentes</h1>
         <p>Clique em uma das caixas abaixo para ver a resposta da referente pergunta.</p>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               Quando irá iniciar os cursos ?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body title-orange ">
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
               <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Para quais concursos o curso será ministrado ?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body title-orange ">
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -436,19 +441,19 @@
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body title-orange ">
+            <div class="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed title-orange " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
               Qual endereço da Igor Passos Centro de Cursos
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body title-orange ">
+          <div id="collapseFor" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
