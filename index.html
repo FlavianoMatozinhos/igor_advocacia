@@ -509,7 +509,7 @@
 
         function atualizarCronometro() {
           const agora = new Date();
-          const futuro = new Date("2024-03-31T23:59:59"); // Defina a data final desejada
+          const futuro = new Date("2024-04-01T01:00:00"); // Defina a data final desejada
 
           const diferenca = futuro - agora;
 
@@ -532,35 +532,6 @@
 
         setInterval(atualizarCronometro, 1000);
       });
-
-      // var acc = document.getElementsByClassName("accordion");
-      // var i;
-
-      // for (i = 0; i < acc.length; i++) {
-      //   acc[i].addEventListener("click", function () {
-      //     this.classList.toggle("active");
-      //     this.parentElement.classList.toggle("active");
-
-      //     var pannel = this.nextElementSibling;
-
-      //     if (pannel.style.display === "block") {
-      //       pannel.style.display = "none";
-      //     } else {
-      //       pannel.style.display = "block";
-      //     }
-      //   });
-      // }
-
-      let accordions = document.querySelectorAll('.accordion-container .accordion');
-
-      accordions.forEach(acco =>{
-          acco.onclick = () =>{
-              accordions.forEach(subAcco => { subAcco.classList.remove('active') });
-              acco.classList.add('active');
-          }
-      })
-
-
     </script>
   </body>
 </html>
