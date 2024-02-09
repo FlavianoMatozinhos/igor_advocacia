@@ -4890,7 +4890,7 @@ footer {
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
   font-size: 1rem;
-  color: var(--bs-accordion-btn-color);
+  color: var(--bs-orange);
   text-align: left;
   background-color: var(--bs-accordion-btn-bg);
   border: 0;
@@ -4904,7 +4904,7 @@ footer {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: var(--bs-accordion-active-color);
+  color: var(--bs-orange);
   background-color: var(--bs-accordion-active-bg);
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
     var(--bs-accordion-border-color);
@@ -4944,6 +4944,7 @@ footer {
 }
 
 .accordion-item {
+  margin-bottom: 1.5%;
   color: var(--bs-accordion-color);
   background-color: var(--bs-accordion-bg);
   border: var(--bs-accordion-border-width) solid
@@ -12602,7 +12603,7 @@ footer {
 }
 
 .title-orange {
-  color: orange;
+  color: rgb(239, 101, 52);
 }
 
 .container_retangulos {
@@ -13383,6 +13384,15 @@ h1 {
   p.text-light.text-center {
     font-size: 12px;
   }
+
+  .subscribe-container {
+    margin: 0 2% !important;
+    padding: 35px 15px 35px !important;
+    background-color: #f4f6fd;
+    border-radius: 15px !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .review-container {
@@ -13588,7 +13598,7 @@ iframe {
   overflow: hidden;
 }
 
-.wrapper {
+/* .wrapper {
   max-width: 50%;
   margin: auto;
 }
@@ -13638,12 +13648,13 @@ iframe {
 .faq.active {
   border: none;
 }
+*/
 
 .subscribe-container {
-  padding: 77px 20px 116px;
+  margin: 0 15%;
+  padding: 82px 170px 116px;
   background-color: #f4f6fd;
   border-radius: 67px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
