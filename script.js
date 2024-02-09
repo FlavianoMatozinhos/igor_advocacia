@@ -83,24 +83,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   document
-    .getElementById("equipe-link")
+    .getElementById("noticias-link")
     .addEventListener("click", function (event) {
       event.preventDefault();
-      document.getElementById("equipe").scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById("noticias")
+        .scrollIntoView({ behavior: "smooth" });
     });
 
   document
-    .getElementById("contato-link")
+    .getElementById("eventos-link")
     .addEventListener("click", function (event) {
       event.preventDefault();
-      document.getElementById("contato").scrollIntoView({ behavior: "smooth" });
-    });
-
-  document
-    .getElementById("duvida-link")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
-      document.getElementById("duvida").scrollIntoView({ behavior: "smooth" });
+      document.getElementById("eventos").scrollIntoView({ behavior: "smooth" });
     });
 });
 
