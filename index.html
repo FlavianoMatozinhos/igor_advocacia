@@ -32,6 +32,8 @@
       referrerpolicy="no-referrer"
     />
 
+    <link href="https://fonts.cdnfonts.com/css/made-tommy-outline" rel="stylesheet">
+
     <title>Igor Passos</title>
   </head>
   <body>
@@ -83,7 +85,7 @@
         <div class="container position-relative z-3">
           <img
                 src="images/igor.png"
-                style="margin: 0 auto; max-width: 100%;"
+                style="margin: 0 auto; max-width: 45%;"
                 class="d-block"
               />
       </header>
@@ -93,30 +95,30 @@
     <section id="sobre" class="intro">
       <div class="text-center">
         <!-- CONTAGEM REGRESSIVA -->
-        <div class="row justify-content-center grid_cronometro pt-7 pb-8 align-items-center">
-          <div class="col-4 timer">
-            <div class="cronometro">
-              <div class="tempo">
-                <div class="row justify-content-around">
-                  <div class="col-sm-2 text-light">
-                    <span class="fs-1" id="meses">00</span>
-                    <span><p>Meses</p></span>
+        <div class="row grid_cronometro pt-5 pb-8 align-items-center justify-content-center">
+          <div class="col-3 coluna_cronometro">
+            <div class="">
+              <div class="cronometro">
+                <div class="row justify-content-center timer">
+                  <div class="col-sm-3 text-light timer_background primeiro_cronometro">
+                    <span class="fs-1 tempo" id="meses">00</span>
+                    <p>meses</p>
                   </div>
-                  <div class="col-sm-2 text-light">
-                    <span class="fs-1" id="dias">00</span>
-                    <span><p>Dias</p></span>
+                  <div class="col-sm-3 text-light timer_background">
+                    <span class="fs-1 tempo" id="dias">00</span>
+                    <span><p>dias</p></span>
                   </div>
-                  <div class="col-sm-2 text-light">
-                    <span class="fs-1" id="horas">00</span>
+                  <div class="col-sm-3 text-light timer_background terceiro_cronometro">
+                    <span class="fs-1 tempo" id="horas">00</span>
                     <span><p>Horas</p></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4 title_cronometro">
-            <h2 class="fs-1">
-              Contagem regressiva para as primeiras aulas
+          <div class="col-3 title_cronometro">
+            <h2>
+              Contagem regressiva para às primeiras aulas
             </h2>
           </div>
         </div>
@@ -125,15 +127,7 @@
         <div class="mb-5">
           <h1 class="title_sobre fs-1 mb-3">Conheça Igor Passos</h1>
           <div class="video-container">
-            <iframe
-              width="1000"
-              height="500"
-              src="https://www.youtube.com/embed/j-2mBFRjC6Y?si=dfkf8OS9UWvSSwKR"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            <iframe width="850" height="500" src="https://www.youtube.com/embed/jthFeHAfEoQ?si=AE-EkAnIIXXHmk0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <p class="text-light mt-3">
             Veja quem é o Igor Passos no video acima <br> antes de continuar sua
@@ -144,7 +138,7 @@
         <!-- ABAIXO DO VIDEO -->
         <div class="jornada">
           <div class="text-center">
-              <h1 class="title_sobre mt-8 fs-1">PARA QUEM É ESSA JORNADA</h1>
+              <p class="title_sobre mt-7 fs-1">PARA QUEM É ESSA JORNADA</p>
             </div>
           <div class="parent">
             <div class="div1 rocket">
@@ -154,26 +148,26 @@
               <img src="images/linha.png" alt=""/>
             </div>
             <div class="div3">
-              <p class="text-light text-center">
+              <p class="text-light text-start">
                 Quer aproveitar o inicio desse ano para mudar de vida sendo
                 aprovado em concursos que pagam de 2 á 20 mil reais.
               </p>
             </div>
             <div class="div4">
-              <p class="text-light text-center">
+              <p class="text-light text-start">
                 Quem deseja ter aulas com um professor que já ministrou nos
                 próprios eventos do TRE (um dos maiores concursos públicos do
                 Brasil).
               </p>
             </div>
             <div class="div5">
-              <p class="text-light text-center">
+              <p class="text-light text-start">
                 Para aqueles que buscam mudar de carreira ou que desejam ingressar
                 no serviço público.
               </p>
             </div>
             <div class="div6">
-              <p class="text-light text-center">
+              <p class="text-light text-start">
                 Para pessoas que desejam atualizar os conhecimentos na área,
                 afinal nossos cursos irão abranger amplas áreas.
               </p>
@@ -249,14 +243,14 @@
       </div>
     </section>
 
-    <section class="blog intro" id="eventos" style="padding: 10% 0;margin-bottom: 10%;background-color: #f4f6fd;">
+    <section class="blog intro" id="eventos" style="padding: 10% 0;margin-bottom: 10%;background-color: #ededed;">
       <div class="container">
         <div class="blog-header">
           <h2 class="global-heading global-heading--big title_black fs-1">
             Agência de Eventos
           </h2>
         </div>
-        <div class="blog-list">
+        <div class="row col-md-6 offset-md-3">
           <div class="blog-item">
             <div class="blog-content">
               <div class="row">
@@ -266,43 +260,7 @@
                 <div class="col">
                   <h3 class="blog-title">Primeiro Curso em nossa plataforma</h3>
                   <p class="blog-desc">
-                    Em 01 de abril será disponibilizado o
-                    primeiro curso em nossa plataforma,
-                    contendo 16 horas dividias em 4
-                    modulos de 4 horas (cada).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blog-item">
-            <div class="blog-content">
-              <div class="row">
-                <div class="col-sm-2 data-evento">
-                  <h1 class="title-orange fs-1">01</h1>abril
-                </div>
-                <div class="col">
-                  <h3 class="blog-title">Primeiro Curso em nossa plataforma</h3>
-                  <p class="blog-desc">
-                    Em 01 de abril será disponibilizado o
-                    primeiro curso em nossa plataforma,
-                    contendo 16 horas dividias em 4
-                    modulos de 4 horas (cada).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blog-item">
-            <div class="blog-content">
-              <div class="row">
-                <div class="col-sm-2 data-evento">
-                  <h1 class="title-orange fs-1">01</h1>abril
-                </div>
-                <div class="col">
-                  <h3 class="blog-title">Primeiro Curso em nossa plataforma</h3>
-                  <p class="blog-desc">
-                    Em 01 de abril será disponibilizado o
+                    Em 15 de abril será disponibilizado o
                     primeiro curso em nossa plataforma,
                     contendo 16 horas dividias em 4
                     modulos de 4 horas (cada).
@@ -322,26 +280,19 @@
             <img class="review-bg" srcset="./images/review-bg.png 2x" />
             <div>
               <div class="review-card">
-                <div class="review-avatar">
-                  <img srcset="./images/review-user1.png 2x" />
-                </div>
-                <h3 class="review-name">Mark Parker</h3>
-                <span class="review-job">Aluna dos eventos</span>
+                <h3 class="review-name">Marcio Dalaia</h3>
+                <span class="review-job">Aluno dos eventos</span>
                 <p class="review-desc">
-                  Sem dúvidas um profissional
-                  apto para ensino, estive em
-                  duas palestras e na
-                  especialização INSS.
+                  Gostei da abordagem prática do
+                  palestrante. Fez a teoria parecer
+                  mais aplicável ao dia a dia.
                 </p>
                 <div class="review-quote d-flex">
                   <img srcset="./images/icon-quote.png 2x" />
                 </div>
               </div>
               <div class="review-card">
-                <div class="review-avatar">
-                  <img srcset="./images/review-user1.png 2x" />
-                </div>
-                <h3 class="review-name">Mark Parker</h3>
+                <h3 class="review-name">Regina Oliveira</h3>
                 <span class="review-job">Aluna dos eventos</span>
                 <p class="review-desc">
                   Sem dúvidas um profissional
@@ -356,16 +307,11 @@
             </div>
             <div>
               <div class="review-card">
-                <div class="review-avatar">
-                  <img srcset="./images/review-user1.png 2x" />
-                </div>
-                <h3 class="review-name">Mark Parker</h3>
+                <h3 class="review-name">Monica Aragão</h3>
                 <span class="review-job">Aluna dos eventos</span>
                 <p class="review-desc">
-                  Sem dúvidas um profissional
-                  apto para ensino, estive em
-                  duas palestras e na
-                  especialização INSS.
+                  Excelente palestra! A discussão
+                  sobre casos reias trouxe uma perspectiva muito interessante.
                 </p>
                 <div class="review-quote d-flex">
                   <img srcset="./images/icon-quote.png 2x" />
@@ -404,7 +350,7 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              O curso inicia em <strong>abril.</strong>
             </div>
           </div>
         </div>
@@ -417,7 +363,7 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              O foco do curso são concursos dos TRTs (Tribunais Regionais do Trabalho), para os cargos de Técnico e Analista Judiciário.
             </div>
           </div>
         </div>
@@ -430,7 +376,7 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              Temos também um perfil  no instagram <a href="https://www.instagram.com/igorpassos.cc/?hl=pt-br">@igorpassos.cc</a> 
             </div>
           </div>
         </div>
@@ -442,14 +388,13 @@
           </h2>
           <div id="collapseFor" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+              Av. Olívia Flores, 2285, sala 503, Ed. Olívia Office, Candeias, Vitória da Conquista-BA.            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer mb-7">
+    <!-- <footer class="footer mb-7">
       <div class="container">
         <div class="row">
           <div class="grid_footer">
@@ -491,7 +436,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <button id="to-top" class="to-top-btn">
       <img src="images/up-arrow.png" alt="" />
@@ -509,7 +454,7 @@
 
         function atualizarCronometro() {
           const agora = new Date();
-          const futuro = new Date("2024-04-01T01:00:00"); // Defina a data final desejada
+          const futuro = new Date("2024-04-15T01:00:00"); // Defina a data final desejada
 
           const diferenca = futuro - agora;
 

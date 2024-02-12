@@ -5,6 +5,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.cdnfonts.com/css/made-tommy-outline");
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -107,12 +109,13 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: "MADE TOMMY", sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   text-align: var(--bs-body-text-align);
   -webkit-text-size-adjust: 100%;
+  background: #fdfdfd;
   background-image: url("/images/Base.jpg");
   background-size: cover;
   background-position: center;
@@ -3885,7 +3888,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-weight: var(--bs-nav-link-font-weight);
+  /* font-weight: var(--bs-nav-link-font-weight); */
   color: white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -6171,10 +6174,6 @@ footer {
     margin-top: calc(-1 * var(--bs-gutter-y));
     /* margin-right: calc(-0.5 * var(--bs-gutter-x));
     margin-left: calc(-0.5 * var(--bs-gutter-x)); */
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .container h5 {
@@ -6210,14 +6209,15 @@ footer {
   }
 
   .timer {
-    width: 90% !important;
-  }
-
-  .jornada {
-    margin: 0 5% !important;
+    flex-wrap: nowrap;
+    margin-right: 0%;
+    width: 100%;
+    margin-left: 0%;
+    justify-content: flex-start;
   }
 
   .title_cronometro {
+    width: 100%;
     margin-left: 0 !important;
   }
 
@@ -6226,9 +6226,65 @@ footer {
     text-align: center !important;
   }
 
+  .timer_background.col-3 {
+    width: 100%;
+  }
+
   .grid_cronometro,
   .review-container {
     flex-direction: column-reverse;
+  }
+
+  .row > * {
+    flex-shrink: 1 !important;
+    width: 100% !important;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
+
+  .timer_background {
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  iframe {
+    max-width: 100%;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    height: 332px;
+  }
+
+  .div3,
+  .div5 {
+    margin-left: 15% !important;
+  }
+
+  .div4,
+  .div6 {
+    margin-right: 15% !important;
+  }
+
+  .data-evento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: 1 !important;
+    width: 0;
+    max-width: 0;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: 0;
+    padding-right: 29px;
+  }
+
+  .subscribe-container {
+    margin: 0px 4% !important;
   }
 }
 @media (max-width: 1199.98px) {
@@ -12617,14 +12673,15 @@ footer {
 
 .title_cronometro {
   margin-left: 6rem;
+  width: 364px;
 }
 
 .title_sobre,
 .title_cronometro h2 {
-  font-family: "Myriad Pro";
   color: rgb(255, 255, 255) !important;
   text-align: center;
   z-index: 97;
+  font-size: 1.9rem;
 }
 
 .title_cronometro h2 {
@@ -12632,7 +12689,6 @@ footer {
 }
 
 .title_black {
-  font-family: "Myriad Pro";
   color: black !important;
   text-align: center;
   z-index: 97;
@@ -13149,70 +13205,62 @@ h1 {
 
 .div3 {
   grid-area: 3 / 1 / 4 / 2;
-  background: linear-gradient(
-    286deg,
-    rgba(243, 243, 243, 0.16) 8.14%,
-    rgba(243, 243, 243, 0.04) 38.39%,
-    rgba(243, 243, 243, 0.16) 88.69%
-  );
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  margin-left: 34%;
+  background: rgba(55, 55, 55, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 25px;
+  border: 1px solid rgba(55, 55, 55, 0.18);
+  margin-left: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 5px 30px 5px 30px;
+  margin-bottom: 10%;
 }
 
 .div4 {
   grid-area: 4 / 3 / 5 / 4;
-  background: linear-gradient(
-    286deg,
-    rgba(243, 243, 243, 0.16) 8.14%,
-    rgba(243, 243, 243, 0.04) 38.39%,
-    rgba(243, 243, 243, 0.16) 88.69%
-  );
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  margin-right: 34%;
+  background: rgba(55, 55, 55, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 25px;
+  border: 1px solid rgba(55, 55, 55, 0.18);
+  margin-right: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
+  margin-bottom: 10%;
 }
 
 .div5 {
   grid-area: 5 / 1 / 6 / 2;
-  background: linear-gradient(
-    286deg,
-    rgba(243, 243, 243, 0.16) 8.14%,
-    rgba(243, 243, 243, 0.04) 38.39%,
-    rgba(243, 243, 243, 0.16) 88.69%
-  );
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  margin-left: 34%;
+  background: rgba(55, 55, 55, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 25px;
+  border: 1px solid rgba(55, 55, 55, 0.18);
+  margin-left: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
+  margin-bottom: 10%;
 }
 
 .div6 {
   grid-area: 6 / 3 / 7 / 4;
-  background: linear-gradient(
-    286deg,
-    rgba(243, 243, 243, 0.16) 8.14%,
-    rgba(243, 243, 243, 0.04) 38.39%,
-    rgba(243, 243, 243, 0.16) 88.69%
-  );
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  margin-right: 34%;
+  background: rgba(55, 55, 55, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 25px;
+  border: 1px solid rgba(55, 55, 55, 0.18);
+  margin-right: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
+  margin-bottom: 10%;
 }
 
 .rocket img {
@@ -13226,7 +13274,7 @@ h1 {
 
 /* Estilos específicos para a seção #sobre */
 #sobre {
-  background-image: url("images/background.png");
+  background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13340,6 +13388,12 @@ h1 {
 
   iframe {
     width: 80% !important;
+    max-width: 100%;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    height: 338px;
   }
 
   .rocket img {
@@ -13352,14 +13406,11 @@ h1 {
 
   .div3 {
     grid-area: 3 / 1 / 4 / 2;
-    background: linear-gradient(
-      286deg,
-      rgba(243, 243, 243, 0.16) 8.14%,
-      rgba(243, 243, 243, 0.04) 38.39%,
-      rgba(243, 243, 243, 0.16) 88.69%
-    );
-    backdrop-filter: blur(5px);
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
+    border: 1px solid rgba(55, 55, 55, 0.18);
     margin-left: 0;
     display: flex;
     justify-content: center;
@@ -13369,14 +13420,11 @@ h1 {
 
   .div4 {
     grid-area: 4 / 3 / 5 / 4;
-    background: linear-gradient(
-      286deg,
-      rgba(243, 243, 243, 0.16) 8.14%,
-      rgba(243, 243, 243, 0.04) 38.39%,
-      rgba(243, 243, 243, 0.16) 88.69%
-    );
-    backdrop-filter: blur(5px);
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
+    border: 1px solid rgba(55, 55, 55, 0.18);
     margin-right: 0;
     display: flex;
     justify-content: center;
@@ -13386,14 +13434,11 @@ h1 {
 
   .div5 {
     grid-area: 5 / 1 / 6 / 2;
-    background: linear-gradient(
-      286deg,
-      rgba(243, 243, 243, 0.16) 8.14%,
-      rgba(243, 243, 243, 0.04) 38.39%,
-      rgba(243, 243, 243, 0.16) 88.69%
-    );
-    backdrop-filter: blur(5px);
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
+    border: 1px solid rgba(55, 55, 55, 0.18);
     margin-left: 0;
     display: flex;
     justify-content: center;
@@ -13403,14 +13448,11 @@ h1 {
 
   .div6 {
     grid-area: 6 / 3 / 7 / 4;
-    background: linear-gradient(
-      286deg,
-      rgba(243, 243, 243, 0.16) 8.14%,
-      rgba(243, 243, 243, 0.04) 38.39%,
-      rgba(243, 243, 243, 0.16) 88.69%
-    );
-    backdrop-filter: blur(5px);
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
+    border: 1px solid rgba(55, 55, 55, 0.18);
     margin-right: 0;
     display: flex;
     justify-content: center;
@@ -13423,12 +13465,60 @@ h1 {
   }
 
   .subscribe-container {
-    margin: 0 2% !important;
+    /* margin: 0 15% !important; */
     padding: 35px 15px 35px !important;
     background-color: #f4f6fd;
     border-radius: 15px !important;
     justify-content: center;
     align-items: center;
+  }
+
+  .title_cronometro {
+    width: 100% !important;
+  }
+
+  .timer_background {
+    background: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  .row > * {
+    flex-shrink: 1 !important;
+    width: 90% !important;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
+
+  .data-evento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: 1 !important;
+    width: 0;
+    max-width: 0;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: 0;
+  }
+
+  .coluna_cronometro {
+    display: flex;
+    align-items: center;
+    width: 86% !important;
+    justify-content: space-around;
+  }
+
+  .blog-content {
+    padding: 14px 13px;
+  }
+
+  .grid_cronometro {
+    padding-bottom: 6rem !important;
   }
 }
 
@@ -13538,6 +13628,7 @@ h1 {
   }
   .review-content {
     max-width: 100%;
+    padding: 3%;
   }
   .review-list {
     padding-left: 0;
@@ -13572,18 +13663,6 @@ h1 {
 .tempo {
   font-size: 24px;
   font-weight: bold;
-}
-
-.timer {
-  background: linear-gradient(
-    286deg,
-    rgba(243, 243, 243, 0.16) 8.14%,
-    rgba(243, 243, 243, 0.04) 38.39%,
-    rgba(243, 243, 243, 0.16) 88.69%
-  );
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
-  width: 30%;
 }
 
 .borda-laranja {
@@ -13622,10 +13701,45 @@ iframe {
 }
 
 .subscribe-container {
-  margin: 0 15%;
-  padding: 82px 170px 116px;
-  background-color: #f4f6fd;
-  border-radius: 67px;
+  margin: 0 11%;
+  padding: 31px 101px 31px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.timer_background {
+  background: rgba(55, 55, 55, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  width: 100px !important;
+}
+
+.coluna_cronometro {
+  width: 410px !important;
+}
+
+.primeiro_cronometro {
+  border-radius: 10% 0% 0% 10%;
+}
+
+.terceiro_cronometro {
+  border-radius: 0% 10% 10% 0%;
+}
+
+@media screen and (max-width: 1138.8px) {
+  .title_cronometro {
+    width: 400px !important;
+  }
+
+  .coluna_cronometro {
+    width: 353px !important;
+  }
+}
+
+@media screen and (max-width: 413) {
+  iframe {
+    height: 338px !important;
+  }
 }
